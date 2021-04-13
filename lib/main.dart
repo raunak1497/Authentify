@@ -1,6 +1,5 @@
 import 'package:authetify/pages/scanner.dart';
 import 'package:flutter/material.dart';
-import 'package:barcode_scanner/';
 
 void main() {
   //widgetApp //MaterialApp //CupertinoApp
