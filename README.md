@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome page, Login Page and Sign up page - Flutter UI
 
 ## [Watch it on YouTube](https://youtu.be/ExKYjqgswJg)
@@ -11,3 +12,21 @@ We design 3 screens first one is a welcome screen like then user open your app i
 ### Auth UI
 
 ![App UI](/UI.png)
+=======
+# authetify
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+>>>>>>> 2fde7fcce4c6a90a7b6651fad5e5d6fb79e8524c
