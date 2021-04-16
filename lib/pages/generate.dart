@@ -1,20 +1,20 @@
 // import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'scanQR.dart';
+import 'generateQR.dart';
 
 // import 'package:barcode_scan/barcode_scan.dart';
 
-class ScannerPage extends StatelessWidget {
-  static const String routeName = "/scanner";
-  const ScannerPage({Key key}) : super(key: key);
+class GeneratorPage extends StatelessWidget {
+  static const String routeName = "/generator";
+  const GeneratorPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Scan QR Code"),
+        title: Text("Generate QR Code"),
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -29,17 +29,16 @@ class ScannerPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 CircleAvatar(
-                  backgroundImage: AssetImage("QR.png"),
+                  backgroundImage: AssetImage("generator.jpeg"),
                   foregroundColor: Colors.transparent,
                   backgroundColor: Colors.transparent,
                   radius: 150,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Hero(
-                        tag: "Scan QR",
+                        tag: "Generate QR",
                         child: Container(
                           width: ((MediaQuery.of(context).size.width) / 2) - 45,
                           height: 50,
@@ -51,14 +50,14 @@ class ScannerPage extends StatelessWidget {
                                 BorderSide(width: 3, color: Colors.blue),
                             shape: StadiumBorder(),
                             child: Text(
-                              "Scan QR",
+                              "Generate QR",
                               style: TextStyle(fontSize: 17),
                             ),
-                            onPressed: () async {
+                            onPressed: () {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => ScanQR()));
+                                      builder: (context) => QRGenerator()));
                             },
                           ),
                         )),
