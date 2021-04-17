@@ -1,7 +1,6 @@
+import 'package:authetify/pages/scanner.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:async/async.dart';
-import 'scanQR.dart';
 import 'package:barcode_scan/barcode_scan.dart';
 
 class ScanQR extends StatefulWidget {

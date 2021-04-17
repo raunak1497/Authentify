@@ -1,4 +1,4 @@
-import 'package:authetify/pages/add_product.dart';
+import 'package:authetify/pages/generateQR.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +35,7 @@ class _LoginPageState extends State<LoginPage> {
             email: _email, password: _password);
 
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => AddProduct()));
+            context, MaterialPageRoute(builder: (context) => QRGenerator()));
       } catch (e) {
         showError(e.errormessage);
       }
@@ -134,7 +134,7 @@ class _LoginPageState extends State<LoginPage> {
       body: Stack(
         fit: StackFit.expand,
         children: <Widget>[
-          Image.asset("acad.jpg"),
+          Image.asset("/assets/acad.jpg"),
           SingleChildScrollView(
             child: Center(
               child: Container(

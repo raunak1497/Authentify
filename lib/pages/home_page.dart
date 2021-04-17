@@ -1,5 +1,5 @@
 import 'package:authetify/pages/login_page.dart';
-import 'package:authetify/pages/signup_page.dart';
+import 'package:authetify/pages/scanner.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
         onPressed: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => SignupPage()));
+              context, MaterialPageRoute(builder: (context) => ScannerPage()));
         },
         child: Text("Buyer Login",
             textAlign: TextAlign.center,

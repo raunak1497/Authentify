@@ -1,5 +1,4 @@
 import 'package:authetify/pages/splash_screen.dart';
-import 'package:authetify/pages/scanner.dart';
 import 'package:authetify/pages/generate.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -16,8 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: ScannerPage(),
+
       routes: {
-        ScannerPage.routeName: (context) => ScannerPage(),
         GeneratorPage.routeName: (context) => GeneratorPage(),
       },
       debugShowCheckedModeBanner: false,

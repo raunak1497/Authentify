@@ -106,6 +106,7 @@ class _SignupPageState extends State<SignupPage> {
         if (value.length < 3) {
           return "Please enter a valid name.";
         }
+        return null;
       },
     );
     final emailField = TextFormField(
@@ -152,6 +153,7 @@ class _SignupPageState extends State<SignupPage> {
         if (value != pwdInputController.text) {
           return "Passwords do not match";
         }
+        return null;
       },
     );
     final loginButon = Material(
