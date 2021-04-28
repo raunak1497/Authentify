@@ -129,7 +129,7 @@ class _LoginPageState extends State<LoginPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login Page'),
+        title: Text('Login'),
       ),
       body: Stack(
         fit: StackFit.expand,

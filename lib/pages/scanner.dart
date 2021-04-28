@@ -29,7 +29,7 @@ class ScannerPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 CircleAvatar(
-                  backgroundImage: AssetImage("QR.png"),
+                  backgroundImage: AssetImage("assets/QR.png"),
                   foregroundColor: Colors.transparent,
                   backgroundColor: Colors.transparent,
                   radius: 150,

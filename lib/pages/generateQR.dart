@@ -17,7 +17,7 @@ class _QRGeneratorState extends State<QRGenerator> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("QR Generator"),
+          title: Text("Add Product Info"),
         ),
         body: Container(
           child: Column(
@@ -32,7 +32,7 @@ class _QRGeneratorState extends State<QRGenerator> {
                       color: Colors.red,
                       fontSize: 15,
                     ),
-                    labelText: "Enter the data to generate QR",
+                    labelText: "Product Id",
                     hintStyle: TextStyle(color: Colors.grey, fontSize: 15),
                     prefix: Icon(Icons.link),
                   ),
